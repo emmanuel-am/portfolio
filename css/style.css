@@ -1,0 +1,342 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  background: #fff;
+  font-family: "Open Sans";
+  font-size: 16px; }
+
+.contenedor {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden; }
+
+/* ----- ----- HEADER ----- ----- */
+header {
+  background: url("../img/bg.jpg");
+  background-repeat: no-repeat; /*Con esta opcion evitas que se repita la imagen. */
+  background-size: cover;
+  background-position: center;
+  max-height: 400px; }
+ .fixed-top.bg-success {
+    -webkit-box-shadow: 0px 5px 19px -5px rgba(0,0,0,0.44);
+    -moz-box-shadow: 0px 5px 19px -5px rgba(0,0,0,0.44);
+    box-shadow: 0px 5px 19px -5px rgba(0,0,0,0.44);
+}
+.fixed-top {
+    transition: all .3s ease; /*animacion cuando el menu aparece cuando das scroll**/
+}
+.fixed-top .nav-link {
+    color: white;
+}
+.fixed-top .active {
+    background-color:#752f97!important;
+}
+
+.bg-success {
+    background-color: #4cb8b3!important;
+}
+
+  header .menu {
+    margin: 0px; }
+    header .menu a {
+      margin: 0 20px;
+      color: #fff;
+      padding-bottom: 9px;
+      font-size: 1em;
+      display: inline-block;
+      text-decoration: none;
+      border-bottom: 2px solid transparent;} 
+      header .menu a:hover {
+        border-bottom: 2px solid #fff; }
+  header .contenedor-texto {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 100px 0; }
+    header .contenedor-texto .texto {
+      border: 2px solid rgba(255, 255, 255, 0.5);
+      border-radius: 3px;
+      display: inline-block;
+      text-align: center;
+      padding: 20px 60px; }
+      header .contenedor-texto .texto h1, header .contenedor-texto .texto h2 {
+        color: #fff;
+        font-weight: 300;
+        margin: 0; }
+      header .contenedor-texto .texto .nombre {
+        margin-bottom: 10px;
+        font-size: 50px;
+        line-height: 50px; }
+      header .contenedor-texto .texto .profesion {
+        font-size: 25px;
+        line-height: 25px; }
+
+/* ----- ----- MAIN ----- ----- */
+.main .contenedor {
+  overflow: visible; }
+.main .acerca-de {
+  text-align: center; }
+  .main .acerca-de .foto {
+    margin-top: -60px; }
+    .main .acerca-de .foto img {
+      border-radius: 50%;
+      vertical-align: top;
+      border: 5px solid rgba(255, 255, 255, 0.2); }
+  .main .acerca-de .texto {
+    color: #5a5a5a;
+    font-weight: 600;
+    font-size: 1em;
+    line-height: 30px;
+    width: 80%;
+    margin: 40px auto 60px auto; }
+    .main .acerca-de .texto .titulo {
+      font-size: 34px;
+      margin-bottom: 40px;
+      line-height: 34px;
+      font-weight: 300;
+      color: #dd820d;
+      text-align: center; }
+    .main .acerca-de .texto .bold {
+      color: #3895ea;
+      text-decoration: underline; }
+
+/* ----- ----- Technical skills ----- ----- */
+.main .trabajos {
+  background: #f2f2f2;
+  padding: 60px 0; }
+  .main .trabajos .contenedor {
+    overflow: hidden; }
+  .contenedor .titulo {
+    font-size: 34px;
+    line-height: 34px;
+    margin-bottom: 10px;
+    font-weight: 300;
+    color: #323068;
+    text-align: center; }
+
+    .contenedor h3::after { 
+    content: '';
+    display: block;
+    margin: 0 auto 40px auto;
+    height: 1px;
+    width: 60px;
+    background-color: #00b30c;
+    transition: all .3s ease;
+    }
+
+    .contenedor:hover h3::after{
+    width: 180px; /*cuando haces hover crece la linea **/
+    }
+
+    .trabajo p {
+    color: #999;
+    opacity: 0;
+    padding-top: 10px; 
+    transition: all .3s ease;
+    display: block;
+    }
+
+    .trabajo:hover p {
+    opacity: 1;
+    padding-top: 10px; 
+    }
+   
+  .main .trabajos .contenedor-trabajos {
+    display: flex;
+    flex-direction: rows;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .main .trabajos .contenedor-trabajos .trabajo {
+      width: 19%;
+      margin-bottom: 0px; }
+      .main .trabajos .contenedor-trabajos .trabajo .thumb {
+        width: 100%;
+        margin-bottom: 10px; }
+        .main .trabajos .contenedor-trabajos .trabajo .thumb img {
+          vertical-align: top;
+          width: 100%;
+          border-radius: 10px; }
+      .main .trabajos .contenedor-trabajos .trabajo .descripcion {
+        text-align: center; }
+        .main .trabajos .contenedor-trabajos .trabajo .descripcion .nombre {
+          font-weight: 700;
+          color: #3895ea;
+          margin-bottom: 10px; }
+        .main .trabajos .contenedor-trabajos .trabajo .descripcion .categoria {
+          font-size: 14px;
+          color: #636363; }
+
+/* ----- ----- Proyectos ----- ----- */
+.proyectos{
+  padding: 60px 0; }
+  .proyectos .contenedor {
+    overflow: hidden; }
+  .proyectos .titulo {
+    font-size: 34px;
+    line-height: 34px;
+    margin-bottom: 60px;
+    font-weight: 300;
+    color: #323068;
+    text-align: center; }
+  .proyectos .contenedor-proyectos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly; }
+  .proyectos .contenedor-proyectos .proyecto {
+      width: 26%;
+      margin-bottom: 40px; }
+  .proyectos .contenedor-proyectos .proyecto .nombre {
+      text-align: center;
+      font-weight: 600;
+      padding: 10px 0px; }
+  .proyectos .contenedor-proyectos .proyecto .thumb-proyectos {
+        width: 100%;
+        margin-bottom: 10px; }
+  .proyectos .contenedor-proyectos .proyecto .thumb-proyectos img {
+          vertical-align: top;
+          width: 100%;
+          border-radius: 10px; }
+  .thumb-proyectos img {
+      border: 6px solid #ffffff;
+      -webkit-transition: transform .3s ease; /*para hacer mas compatible la transicion ponemos estos prefijos, para firefox y edge**/
+      -ms-transition: transform .3s ease;
+      transition: transform .3s ease; 
+ }
+
+ .thumb-proyectos img:hover {
+      -webkit-transform: scale(1) rotate(10deg);
+      -ms-transform: scale(1) rotate(10deg);
+      transform: scale(1) rotate(10deg); /*la imagen crece 1.2% con scale, con rotate rota la imagen**/
+ }
+
+  .proyectos .contenedor-proyectos .proyecto .contenedor-enlaces{
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around; }
+  .proyectos .contenedor-proyectos .proyecto .contenedor-enlaces .enlaces .enlace1 {
+        display: inline-block;
+        border-radius: 7%;
+        background-color: #245d88;
+        padding: 5px 20px;
+        text-align: center;
+        color: white;
+        margin-top: 10px;
+        text-decoration: none;
+        border: 1px solid #245d88; }
+   .proyectos .contenedor-proyectos .proyecto .contenedor-enlaces .enlaces .enlace2 {
+        border: 1px solid black;
+        display: inline-block;
+        border-radius: 7%;
+        background-color: white;
+        padding: 5px 17.21px;
+        text-align: center;
+        color: black;
+        margin-top: 10px;
+        text-decoration: none; }
+  .proyectos .contenedor-proyectos .proyecto .contenedor-enlaces .enlaces .enlace1:hover,
+  .proyectos .contenedor-proyectos .proyecto .contenedor-enlaces .enlaces .enlace2:hover{
+    text-decoration: underline;
+
+  }
+
+/* ----- ----- Contacto ----- ----- */
+.contacto{
+  background: #f2f2f2;
+  padding: 60px 0; }
+  .contacto .titulo {
+    font-size: 34px;
+    line-height: 34px;
+    margin-bottom: 100px;
+    font-weight: 300;
+    color: #323068;
+    text-align: center; }
+  .contacto .contenedor-redes {
+    display: flex;
+    justify-content: center; }
+  .contacto .contenedor-redes .redes a {
+      text-align: center;
+      font-size: 60px;
+      padding: 15px 60px;
+      margin: 0 20px;
+      border-radius: 3px; }
+  .contacto .contenedor-redes .redes .fa-linkedin{
+    color: #0e76a8;
+    padding-bottom: 20px;
+  }
+  .contacto .contenedor-redes .redes .fa-whatsapp{
+    color: #00bb2d;
+    padding-bottom: 20px;
+  }
+
+  .contacto .contenedor-redes .redes .fa-github{
+    color: #171515;
+    padding-bottom: 20px;
+  }
+  .contacto .contenedor-redes .redes .fa-linkedin:hover {
+      transform: scale(2, 2); }
+  .contacto .contenedor-redes .redes .fa-whatsapp:hover {
+      transform: scale(2, 2); }
+  .contacto .contenedor-redes .redes .fa-github:hover {
+      transform: scale(2, 2); }
+
+footer .derechos {
+  background: #1e2b38;
+  padding: 30px 0; }
+  
+  .derechos .creador{
+    text-align: center;
+    color: #fff;
+  }
+
+
+  
+    
+    
+
+/* ----- ----- MEDIA QUERIES ----- ----- */
+
+@media screen and (max-width: 500px) {
+  header .contenedor-texto .texto .nombre {
+    font-size: 35px; }
+  header .contenedor-texto .texto .profesion {
+    font-size: 18px; }
+  header .menu a {
+      margin: 1px 1px;
+      font-size: 10px; }
+  header .contenedor-texto {
+    margin: 60px 0; }
+}
+
+
+
+@media screen and (max-width: 500px) {
+  .main .trabajos{ 
+    padding: 20px 0px; }
+  .proyectos{
+    padding: 20px 0px; }
+  .main .trabajos .contenedor-trabajos .trabajo {
+    width: 40%;
+    margin-bottom: 40px; } 
+  .proyectos .contenedor-proyectos .proyecto {
+      width: 100%;
+      margin-bottom: 40px; }
+  .contacto{
+    padding: 30px 0px; }
+  .contacto .titulo{
+    margin-bottom: 20px; }
+  .contacto .contenedor-redes .redes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+}
+
+
